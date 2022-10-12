@@ -1,38 +1,132 @@
-.App {
+body{
+  background-color: #FAF7F0;
+  font-family: 'Roboto Slab', serif;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.watch-card{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  margin-top: 10px;
+}
+.watch-card:hover{
+  border: 1px solid #7D6E83;
+  border-radius: 3px;
+  background-color: #D9D9D9;
+}
+  
+.card-image{
+  margin-top: 5px;
+  align-self: center;
+}
+.watch-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0;
+}
+.title{
+  margin: 5px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.year{
+  margin: 0;
+  align-self: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stars{
+  margin-top: 5px;
+  text-align: center;
+  height: 60px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info{
+  margin-top: 3px;
+  text-align: justify;
+}
+nav{
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: #D9D9D9;
+}
+.link{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 3px;
+}
+.link:hover{
+  background-color: #D0B8A8;
+}
+.mainpic{
+  padding: 10px;
+}
+.mainpic:hover{
+ transform: rotate(180deg);
+ transition: rotate 3s;
+}
+.btn{
+  background-color: #7D6E83;
+  padding: 10px;
+  width: 100px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bolder;
+}
+.btn:hover{
+  cursor: pointer;
+}
+form{
+  margin:20px;
+  padding: 30px;
+  font-size: 20px;
+}
+.feedbackForm{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+textarea{
+  height: 100px;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+}
+input{
+  padding: 5px;
+  margin: 10px;
+  width: 220px;
+}
+.box{
+  font-size: 30px;
+  font-weight: bolder;
+}
+.foot{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: flex-end;
+  font-size: 16px;
+  font-weight: 600;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-show{
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 14px;
+  background-color: #D9D9D9;
 }
